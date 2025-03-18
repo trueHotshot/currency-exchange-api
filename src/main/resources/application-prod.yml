@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_SERVER}:5432/${POSTGRES_DB}
+    driverClassName: org.postgresql.Driver
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect

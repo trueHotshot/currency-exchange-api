@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: local-postgres
+  datasource:
+    url: jdbc:postgresql://localhost:5432/currencyexchange
+    driverClassName: org.postgresql.Driver
+    username: user
+    password: password
+    jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect

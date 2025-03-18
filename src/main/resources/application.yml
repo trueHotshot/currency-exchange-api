@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: currencyexchange
+  jpa:
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: #empty
+  liquibase:
+    change-log: classpath:db/changelog-master.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
